@@ -1,8 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Виталий Петрушенко](https://up.htmlacademy.ru/htmlcss/24/user/768249).
-* Наставник: [Владислав Кривокора]
-(https://up.htmlacademy.ru/htmlcss/24/user/167185).
+* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
