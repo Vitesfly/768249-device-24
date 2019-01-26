@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+<header class="main-header">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="" height="" alt="Логотип интернет магазина DEVICE">
+        </a>
+          <form class="site-search">
+                <input type="submit" class="search-item" placeholder="Поиск по сайту">
+                <button type="submit" class="button">Найти</button>
+            </form>
+            <ul class="main-header">
+              <li class="login"><a href="#">Войти</a></li>  
+              <li class="compare"><a href="#">Сравнить</a></li>
+              <li class="basket"><a href="#">Корзина</a></li>
+            </ul>
+            <nav class="main-navigation">
+              <ul class="sait-navigation">
+                    <li><a href="catalog.html">Каталог товаров</a></li> 
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Гарантия</a></li> 
+                    <li><a href="#">Контакты</a></li>   
+                </ul>
+            </nav>
+        </header> 
+        <main class="container">
+
+            <h1 class="page-title">Моноподы для селфи</h1>
+
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог товаров</a></li>
+                <li class="breadcrumbs-current">Монопады для селфи</li>                
+            </ul>
+            <section class="filters">
+                <h2 class="visually-hidden">ФИЛЬТР:</h2>                
+            </section>
+            <fieldset>
+                <legend>Цвет</legend>
+                <ul>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                        name="цвет" checked>Черный
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                        name="цвет">Белый
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                        name="цвет" checked>Синий
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                        name="цвет" checked>Красный
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                        name="цвет">Розовый
+                    </li>    
+                </ul>                
+            </fieldset>
+            <fieldset>
+                <legend>Bluetooth</legend>
+                <ul>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                        name="Bluetooth" value="yes" checked>Есть
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                        name="Bluetooth" value="yes">Нет
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit" class="filter-button button">Показать</button>
+            <section class="catalog">
+                <h2 class="visually-hidden">Список селфи-палок</h2>
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        <h3>
+                         <a href="catalog-item.html">
+                            <span class="catalog-category">Любительская селфи-палка</span>                                
+                         </a>
+                        </h3>
+                        <p class="catalog-item-image">
+                           <a href="catalog-item.html">
+                             <img src="img/product-1.jpg" width="220" height="165" alt="Любительская селфи-палка">
+                           </a>
+                        </p>
+                         <b>500 руб.</b>                               
+                    </li>
+                        <li class="catalog-item"> 
+                            <h3>                                
+                             <a href="catalog-item.html">
+                               <span class="catalog-category">Профессиональная селфи-палка</span>                                
+                             </a>
+                            </h3>
+                               <p class="catalog-item-image">
+                                 <a href="catalog-item.html">
+                                   <img src="img/product-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка">
+                                 </a>
+                                </p>
+                                 <b>1500 руб.</b>
+                        </li>
+                          <li class="catalog-item">
+                            <h3>
+                             <a href="catalog-item.html">
+                                <span class="catalog-category">Непотопляемая селфи-палка</span>                                
+                             </a>
+                            </h3>
+                                   <p class="catalog-item-image">
+                                           <a href="catalog-item.html">
+                                             <img src="img/product-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка">
+                                           </a>
+                                         </p>
+                                         <b>2500 руб.</b>
+                                   </li>
+                                   <li class="catalog-item">
+                                        <h3>
+                                           <a href="catalog-item.html">
+                                               <span class="catalog-category">Селфи-палка следуй за мной</span>                                
+                                           </a>
+                                        </h3>
+                                       <p class="catalog-item-image">
+                                               <a href="catalog-item.html">
+                                                 <img src="img/product-4.jpg" width="220" height="165" alt="Селфи-палка следуй за мной">
+                                               </a>
+                                             </p>
+                                             <b>4900 руб.</b>
+                                       </li>
+                                    </ul>
+                                </section>
+                            </main>
+                            <footer class="main-footer">
+                                    <section>
+                                        <h2 class="visually-hidden">Нижнее меню</h2>    
+                                      <a class="main-header-logo" href="index.html">
+                                          <img src="img/logo.svg" width="" height="" alt="Логотип интернет магазина DEVICE">
+                                        </a>        
+                                        <ul class="main-header">
+                                          <li class="login"><a href="#">Войти</a></li>  
+                                          <li class="compare"><a href="#">Сравнить</a></li>
+                                          <li class="basket"><a href="#">Корзина</a></li>
+                                        </ul>     
+                                        <div class="adress">
+                                            <address>Москва, ул. Строителей, 15</address>   
+                                        </div>        
+                                        <div class="footer-elements">
+                                          <ul class="footer-elements-list">
+                                              <li><a href="#">Доставка</a></li> 
+                                              <li><a href="#">Гарантия</a></li>  
+                                              <li><a href="#">Контакты</a></li>   
+                                          </ul>
+                                        </div>
+                                        <div class="tel">
+                                          <p>Тел.: +7 (495) 495-95-95</p>
+                                        </div>        
+                                      </section>
+                                  </footer>
+                                
+                                  <div>
+                                    <img src="http://placehold.it/150x100" alt="Жёлтая полоска">
+                                    <img src="http://placehold.it/150x100" alt="Логотип HTMLAcademy">
+                                  </div>
+                                  <div class="footer-social">
+                                    <ul class="social-list">      
+                                      <li><a class="social-button" href="https://www.facebook.com">Фейсбук</a></li> 
+                                      <li><a class="social-button" href="https://www.instagram.com">Инстаграм</a></li>
+                                      <li><a class="social-button" href="https://twitter.com">Твиттер</a></li> 
+                                    </ul>
+                                  </div> 
+                        </body>
+                      </html>         
+                            
+                                           
+            
