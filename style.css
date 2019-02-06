@@ -1,0 +1,156 @@
+@import url "http://fonts.fontstorage.com/import/gilroy.css";
+
+@import "http://fonts.fontstorage.com/import/opensans.css";
+
+body  {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #464646;
+    letter-spacing: 0.15px;
+
+    background-color: #ffffff;
+}
+
+a  {
+    text-decoration: none;
+}
+
+.main-navigation  {
+    background-color: #f0c52e;
+    }
+
+.sait-navigation  {
+    font-family: "Gilroy - Extra Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+}
+
+.dropdown-catalogs  {
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.15px
+}
+
+.main-header,
+.dropdown-catalogs,
+.sait-navigation  {
+    list-style: none;
+}
+
+.sait-navigation a,
+.main-header a  {
+    color: black;
+}
+
+.user-nav  a:hover,
+.user-nav  a:focus,
+.site-nav a:hover,
+.site-nav a:focus  {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.user-nav a:active,
+.site-nav a:active  {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.button  {
+    font-family: "Gilroy - Extra Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2.15px;
+
+    background-color: #f0c52e;
+}
+
+/* .button: hover,
+.button:focus{} 
+пока не разобрался, как делать этот эффект 
+*/
+
+.button:active {
+    color: rgba(0, 0, 0, 0.3);
+    
+    background-color: rgb(240, 197, 46);
+  }
+.slider-radio  {
+    list-style: none;
+}
+
+.slider-btn  {
+    background-image: url("css/slider-button.svg");
+    background-repeat: no-repeat;
+}
+
+.slider-b  {
+    font-family: "Gilroy - Extra Bold", sans-serif;
+    font-size: 47px;
+    font-weight: 800;
+
+    line-height: 56px;    
+    letter-spacing: 0.17px; 
+}
+
+.slider-th  {
+    font-family: "Gilroy - Extra Bold", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+
+    line-height: 48px;
+    letter-spacing: 0.36px;
+}
+
+.slider-td  {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+
+    line-height: 20px;
+    letter-spacing: 0.13px;
+}
+.main-footer  {
+    color: #ffffff;
+    background-color: #464646;
+}
+
+.footer-user-nav,
+.footer-site-nav  {
+    list-style: none;
+}
+
+.footer-site-nav a  {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-nav-item a {
+    list-style: none;
+}
+
+.main-footer a  {
+    color: #ffffff;
+}
+
+.footer-user-nav-item  a:hover,
+.footer-user-nav-item  a:focus,
+.footer-site-nav-item a:hover,
+.footer-site-nav-item a:focus  {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-user-nav-item a:active,
+.footer-site-nav-item a:active  {
+    color: rgba(0, 0, 0, 0.3);
+}
+
