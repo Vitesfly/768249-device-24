@@ -21,10 +21,47 @@ a  {
 }
 
 .main-navigation  {
-    background-color: #f0c52e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+     background-color: #f0c52e;
     }
 
+
+
+.main-navigation__user-item  {
+    padding: 15px 0px 15px 27px;
+}
+
+.main-navigation__search-search  {
+    position: absolute;
+    top: 8px;
+    left: -24px;
+
+    width: 18px;
+    height: 18px;
+
+    background: url("search.svg")
+}
+.main-nav__search  {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+}
+
 .sait-navigation  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
     font-family: "Gilroy - Extra Bold", sans-serif;
     font-size: 18px;
     font-weight: 400;
