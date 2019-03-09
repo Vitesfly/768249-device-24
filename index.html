@@ -12,13 +12,13 @@
 			<header class="main-header">
 				<h1 class="visually-hidden">Интернет магазин "DEVICE"</h1>
 				<div class="main-header-logo">
-					<a><img src="img/logo.svg" alt="Логотип "DEVICE" width="163" height="35"></a>
+					<a><img src="img/logo.svg" alt="Логотип DEVICE" width="163" height="36"></a>
 				</div>
 				<nav class="main-navigation">
-					<ul class="main-navigation-user-list"><!--Добавил-->
+					<ul class="main-navigation-user-list">
 						<li class="main-navigation-user-item main-navigation-user-item-search"><!--Добавил-->
-							<form class="main-navigation-search" action="https://echo.htmlacademy.ru" class="search" method="get">
-								<input class="main-navigation-search-input" name="search" placeholder="поиск по сайту" type="search">
+							<form class="main-navigation-search" action="https://echo.htmlacademy.ru" method="get">
+								<input class="main-navigation-search-input" id="search" name="search" placeholder="поиск по сайту" type="search">
 								<button class="main-navigation-search-button" type="submit">Найти</button>		
 								<label class="main-navigation-search-label" for="search">
 									<span class="visually-hidden">Поиск:</span>
@@ -26,29 +26,13 @@
 							</form>
 						</li>
 						<li class="main-navigation-user-item  main-navigation-user-item-login">
-							<a class="main-navigation-user-link  main-navigation-user-link-login" href="#">
-									<svg class="black" xmlns="http://www.w3.org/2000/svg" width="13" height="12">
-										<path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
-									</svg>
-								Войти
-							</a>
+							<a class="main-navigation-user-link  main-navigation-user-link-login" href="#">Войти</a>
 						</li>
 						<li class="main-navigation-user-item  main-navigation-user-item-compare">
-							<a class="main-navigation-user-link  main-navigation-user-link-compare" href="#">
-									<svg class="black" xmlns="http://www.w3.org/2000/svg" width="10" height="10">
-										<path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
-									</svg>
-								Сравнить
-							</a>
+							<a class="main-navigation-user-link  main-navigation-user-link-compare" href="#">Сравнить</a>
 						</li>
 						<li class="main-navigation-user-item main-navigation-user-item-basket">
-							<a class="main-navigation-user-link  main-navigation-user-link-basket" href="#">
-									<svg class="black" xmlns="http://www.w3.org/2000/svg" width="12" height="12">
-										<path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/>
-										<path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
-									</svg>
-								Корзина
-							</a>
+							<a class="main-navigation-user-link  main-navigation-user-link-basket" href="#">Корзина</a>
 						</li>
 					</ul>
 					<ul class="site-navigation-list">
@@ -100,7 +84,7 @@
 							<b>Делай селфи,<br>как Бен Стиллер!</b>
 							<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 							<a class="btn" href="#">Подробнее</a>
-							<div class="show-slider-details  first-slider-details-1">
+							<div class="show-slider-details  show-slider-details-1">
 								<div class="show-slider-details-title  show-slider-details-title-first">8,5 м</div>
 								<div class="show-slider-details-title  show-slider-details-title-second">5 кг</div>
 								<div class="show-slider-details-title  show-slider-details-title-third">Карбон</div>
@@ -129,7 +113,7 @@
 						<div class="show-slider-img-dropdown  show-slider-img-dropdown-03">
 							<img src="img/quadcopter.png" alt="Квадрокоптер" width="526" height="334">
 						</div>
-						<div class="show-slider-description-dropdown  first-slider-description-dropdown-3">
+						<div class="show-slider-description-dropdown  show-slider-description-dropdown-3">
 							<b>Порхает как бабочка, жалит как пчела!</b>
 							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 							<a class="btn" href="#">Подробнее</a>
@@ -156,53 +140,53 @@
 				</section>
 				<section class="popular-products">
 					<h2 class="visually-hidden">6 популярных девайсов</h2>
-					<ul class="popular-products__list">
-						<li class="popular-products__item">
-							<a class="popular-products__item-link"  href="#">
-								<div class="popular-products__item-wrap popular-products__item-wrap-vr">
-									<img class="popular-products-__item-img" alt="Виртуальная реальность" src="img/virtual-really.svg" width="97" height="55">
+					<ul class="popular-products-list">
+						<li class="popular-products-item">
+							<a class="popular-products-item-link"  href="#">
+								<div class="popular-products-item-wrap popular-products-item-wrap-vr">
+									<img class="popular-products-item-img" alt="Виртуальная реальность" src="img/virtual-really.svg" width="97" height="55">
 								</div>
-								<b class="popular-products__item-name">Виртуальная реальность</b>
+								<p class="popular-products-item-name">Виртуальная реальность</p>
 							</a>
 						</li>
-						<li class="popular-products__item">
-							<a class="popular-products__item-link" href="catalog.html">
-								<div class="popular-products__item-wrap popular-products__item-wrap-monopod">
-									<img class="popular-products__item-img" alt="Моноподы для селфи" src="img/selfy-monopod.svg" width="86" height="117">
+						<li class="popular-products-item">
+							<a class="popular-products-item-link" href="catalog.html">
+								<div class="popular-products-item-wrap popular-products-item-wrap-monopod">
+									<img class="popular-products-item-img" alt="Моноподы для селфи" src="img/selfy-monopod.svg" width="86" height="117">
 								</div>
-								<b class="popular-products__item-name">Моноподы для селфи</b>
+								<p class="popular-products-item-name">Моноподы для селфи</p>
 							</a>					
 						</li>
-						<li class="popular-products__item">
-							<a class="popular-products__item-link" href="#">
-								<div class="popular-products__item-wrap popular-products__item-wrap-camera">
-									<img class="popular-products__item-img" alt="Экшн-камеры" src="img/action-camera.svg" width="71" height="87">
+						<li class="popular-products-item">
+							<a class="popular-products-item-link" href="#">
+								<div class="popular-products-item-wrap popular-products-item-wrap-camera">
+									<img class="popular-products-item-img" alt="Экшн-камеры" src="img/action-camera.svg" width="71" height="87">
 								</div>
-								<b class="popular-products__item-name">Экшн-камеры</b>
+								<p class="popular-products-item-name">Экшн-камеры</p>
 							</a>		
 						</li>
-						<li class="popular-products__item">
-							<a class="popular-products__item-link" href="#">
-								<div class="popular-products__item-wrap popular-products__item-wrap-fitness">
-									<img class="popular-products__item-img" alt="Фитнес-браслеты" src="img/fitness-br.svg" width="107" height="65">
+						<li class="popular-products-item">
+							<a class="popular-products-item-link" href="#">
+								<div class="popular-products-item-wrap popular-products-item-wrap-fitness">
+									<img class="popular-products-item-img" alt="Фитнес-браслеты" src="img/fitness-br.svg" width="107" height="65">
 								</div>
-								<b class="popular-products__item-name">Фитнес-браслеты</b>
+								<p class="popular-products-item-name">Фитнес-браслеты</p>
 							</a>
 						</li>
-						<li class="popular-products__item">
-							<a class="popular-products__item-link" href="#">
-								<div class="popular-products__item-wrap popular-products__item-wrap-clock">
-									<img class="popular-products__item-img" alt="Умные часы" src="img/clock.svg" width="56" height="98">
+						<li class="popular-products-item">
+							<a class="popular-products-item-link" href="#">
+								<div class="popular-products-item-wrap popular-products-item-wrap-clock">
+									<img class="popular-products-item-img" alt="Умные часы" src="img/clock.svg" width="56" height="98">
 								</div>
-								<b class="popular-products__item-name">Умные часы</b>
+								<p class="popular-products-item-name">Умные часы</p>
 							</a>
 						</li>
-						<li class="popular-products__item">
-							<a class="popular-products__item-link" href="#">
-								<div class="popular-products__item-wrap popular-products__item-wrap-dron">
-									<img class="popular-products__item-img" alt="Квадрокоптеры" src="img/dron.svg" width="132" height="69"> 
+						<li class="popular-products-item">
+							<a class="popular-products-item-link" href="#">
+								<div class="popular-products-item-wrap popular-products-item-wrap-dron">
+									<img class="popular-products-item-img" alt="Квадрокоптеры" src="img/dron.svg" width="132" height="69"> 
 								</div>
-								<b class="popular-products__item-name">Квадрокоптеры</b>
+								<p class="popular-products-item-name">Квадрокоптеры</p>
 							</a>
 						</li>
 					</ul>
@@ -248,7 +232,7 @@
 				</div>		
 			</section>
 			<div class="container">
-				<div class="main-brands">
+				<section class="main-brands">
 					<h2 class="visually-hidden">Бренды</h2>
 					<ul class="main-brands-list">
 						<li class="main-brands-item">
@@ -272,7 +256,7 @@
 							</a>
 						</li>
 					</ul>
-				</div>
+				</section>
 				<section class="main-info-contacts">
 					<h2 class="visually-hidden">О нас</h2>
 					<article class="main-info">
@@ -300,10 +284,10 @@
 							Вы можете забрать товар сами, заехав в наш офис.Заодно, вы сможете<br>
 							проверить работоспособность покупки. Всякое бывает.
 						</p>	
-							<a class="main-contacts-map" href="#">
-								<img class="map-item" src="img/map.jpg.png">
-							</a>
-							<a class="main-contacts-btn btn">Напишите нам</a>
+						<a class="main-contacts-map" href="#">
+							<img src="img/main-contacts-map.jpg" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
+						</a>
+						<a class="main-contacts-btn btn">Напишите нам</a>
 					</section>
 				</section>
 			</div>
@@ -311,7 +295,6 @@
 		<footer class="main-footer">
 			<div class="container">
 				<div class="main-footer-user">
-					<h2 class="visually-hidden">Для пользователя</h2>
 					<div class="main-footer-logo">
 						<a>
 							<img src="img/yellow-logo.svg" alt="Device-yellow" width="164px" height="36px">
@@ -369,5 +352,37 @@
 				</section>
 			</div>
 		</footer>		
+		<section class="modal-login">
+			<h2 class="visually-hidden">Личный кабинет</h2>
+			<div class="modal-login-dropdown">
+				<form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+					<div class="modal-input-dropdown modal-input-dropdown-name">
+						<label for="user-name">Ваше имя:</label>
+						<input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+					</div>
+					<div class="modal-input-dropdown modal-input-dropdown-email">
+						<label for="user-email">Ваш e-mail:</label>
+						<input id="user-email" type="text" name="user-email" placeholder="email@example.com">
+					</div>
+					<div class="modal-input-dropdown modal-input-dropdown-message">
+						<label for="user-message">Текст письма:</label>
+						<textarea  id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
+					</div> 
+					<button class="btn" type="submit">Отправить</button>
+				</form>
+				<button class="modal-input-dropdown-close" type="button">
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+			</div>
+		</section>
+		<section class="modal-map">
+			<div class="modal-map-dropdown">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112436988893!2d37.52821835204128!3d55.687032925863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522064816436" width="960" height="560" style="border:0" allowfullscreen></iframe>
+				<button class="modal-map-close" type="button">
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+			</div>
+		</section>
+		<script src="js/script.js"></script>
 	</body>
 </html>
