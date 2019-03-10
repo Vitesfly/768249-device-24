@@ -1,57 +1,82 @@
-var modalLoginLink = document.querySelector(".main-contacts-btn"),
-    modalLogin = document.querySelector(".modal-login"),
-    userName = modalLogin.querySelector("[name=user-name]"),
-    userEmail = modalLogin.querySelector("[name=user-email]"),
-    modalLoginForm = modalLogin.querySelector("form"),
-    modalMapLink = document.querySelector(".main-contacts-map"),
-    modalMap = document.querySelector(".modal-map"),
-    modalLoginClose = document.querySelector("modal-input-dropdown-close"),
-    modalMapClose = document.querySelector("modal-map-close");
+var Link = document.querySelector(".main-contacts-btn");
 
-modalLoginLink.addEventListener("click", function (evt)  {
+var popup = document.querySelector(".modal-login");
+var close = popup.querySelector(".modal-input-dropdown-close");
+
+var form = popup.querySelector("form");
+var login = popup.querySelector("[name=user-name]");
+var password = popup.querySelector("[name=user-password]");
+
+var isStorageSupport = true;
+var storage = "";
+
+try {
+    storage = localStorage.getItem("login");    
+} catch (err)  {
+    isStorageSupport = false;
+}
+
+Link.addEventListener("click", function (evt)  {
     evt.preventDefault();
-    modalLogin.classList.add("modal-login-active");
-    userName.focus();
-})    
+    popup.classList.add("modal-show");
 
-nodalLoginForm.addEventListener("submit", function (evt)  {
-    if (!userName.value || !userEmail.value)  {
-        evt.preventDefault();
-        modalLogin.classList.add("modal-login-error");
+    if (storage)  {
+        login.value = storage;
+    } else  {    
+    login.focus();
     }
-})
+});
+
+close.addEventListener("click", function (evt)  {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");   
+});
+    
+
+form.addEventListener("submit", function (evt)  {  
+    if (!login.value || !password.value)  {
+        evt.preventDefault();
+        popup.classList.remove("modal-error"); 
+        popup.offsetWidth = popup.offsetWidth;             
+        popup.classList.add("modal-error");    
+    } else  {
+        if (isStorageSupport)  {
+        localStorage.setItem("login", login.value);
+    }
+  }
+});
 
 window.addEventListener("keydown", function (evt)  {
     if (evt.keyCode === 27)  {
         evt.preventDefault();
-        if (modalLogin.classList.contains("modal-login-active"))  {
-            modalLogin.classList.remove("modal-login-active");
-            modalLogin.classList.remove("modal-login-error");
+        if (popup.classList.contains("modal-show"))  {
+            popup.classList.remove("modal-show");
+            popup.classList.remove("modal-error");   
         }
     }
-})
+});
 
-modalLoginClose.addEventListener("click", function (evt)  {
-    evt.preventDefault();
-    modalLogin.classList.remove("modal-login-active");
-    modalLogin.classList.remove("modal-login-error");
-})
+var mapLink = document.querySelector(".main-contacts-map");
 
-modalMapLink.addEventListener("click", function (evt)  {
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-map-close");
+
+mapLink.addEventListener("click", function (evt)  {
     evt.preventDefault();
-    modalMap.classList.remove("modal-map-active");
-})
+    mapPopup.classList.add("modal-map-show");    
+});
+
+mapClose.addEventListener("click", function (evt)  {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-map-show");
+});
 
 window.addEventListener("keydown", function (evt)  {
     if (evt.keyCode === 27)  {
         evt.preventDefault();
-        if (modalMap.classList.contains("modal-map-active"))  {
-            modalLogin.classList.remove("modal-map-active");
+        if (mapPopup.classList.contains("modal-map-show"))  {
+            mapPopup.classList.remove("modal-map-show");
         }
     }
-})
-
-modalMapClose.addEventListener("click", function (evt)  {
-    evt.preventDefault();
-    modalMap.classList.remove("modal-map-active");
-})
+});
