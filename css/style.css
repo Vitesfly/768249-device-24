@@ -1216,7 +1216,7 @@ a  {
     transition: all 0.3s linear;
 }
 
-.service-slider-input:focus ~ .services-slider-controls label  {
+.service-slider-input:focus ~ .service-slider-controls label  {
     outline: 1px dotted #212121;
     outline: 5px auto -webkit-focus-ring-color;
 }
