@@ -523,7 +523,7 @@ a  {
 }
 
 .main-navigation-user-link-logout:active {
-    color: rgba(0, 0, 0, 0.1sss);
+    color: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -1026,7 +1026,7 @@ a  {
 .popular-products-item-link:focus .popular-products-item-wrap  {
     background-color: rgba(240, 197, 46, 1);
 
-    transition: all 0.2 linear;
+    transition: all 0.2s linear;
 }
 
 .popular-products-item-link:active .popular-products-item-img,
